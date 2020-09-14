@@ -1,0 +1,12 @@
+.footer{
+    justify-content: space-around;
+    height: relative;
+    background-color: white;
+    border-top: gray solid 1px;
+    font-style: bold;
+    font-size: 130%;
+}
+img{
+    width: 5%;
+    height: 5%;
+}

@@ -1,0 +1,23 @@
+.bodycv{
+    
+    margin-top: 10px;
+  
+    margin-left: 10%;
+    margin-right: 10%;
+    height: relative;
+    width: 80%;
+    background-color:white;
+}
+.title h1{
+   text-align: center;
+    color:rgba(170, 53, 53, 0.767);
+}
+p{
+    text-align: center;
+    font-size: 150%;
+}
+button{
+    margin:auto;
+    display: block;
+}
+

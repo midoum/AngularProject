@@ -1,0 +1,35 @@
+<body>
+  <div class="backgroundimage">
+    <div class="backgroundtitle">
+      PorteFolio
+       </div>
+</div>
+
+<div class="row">
+  
+<div *ngFor="let carte of cartes "class="card" style="width: 18rem;">
+  
+    <img class="img-thumbnail img-responsive" src="assets/{{carte.image}}" alt="Card image cap"/>
+    <div class="card-body">
+      <h5 class="card-title">{{carte.title}}</h5>
+      <p class="card-text">{{carte.description}}</p>
+      <a href="https://{{carte.link}}" class="btn btn-primary">Code Source</a>
+    </div>
+  </div>
+</div>
+
+<nav class="Page navigation example" aria-label="Page navigation example">
+  <ul class="pagination">
+    
+    <Button class="page-link" href="#" (click)="toggleCV()">CV</Button>
+    
+    <Button class="page-link" href="#" (click)="toggleMotiv()">Motivation</Button>
+   
+    
+    
+  </ul>
+</nav>
+<app-cv [Cv]="showCv"></app-cv>
+<app-motivation [Motivation]="showMotiv"></app-motivation><br>
+<app-footer></app-footer>
+</body>
