@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Addresse,Email,code,Gouvernerat} from '../contacter/contacter.component';
-var mail;
-var add;
-var c;
-var gouv;
+import {Email,Addresse,Gouvernerat,code} from '../contacter/contacter.component';
+var mail:any;
+var add:any;
+var c:any;
+var gouv:any;
 @Component({
   selector: 'app-showinfo',
   templateUrl: './showinfo.component.html',
