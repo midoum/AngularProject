@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 
 import {gouver}from './gouver';
@@ -45,7 +48,7 @@ export class ContacterComponent implements OnInit {
 		
  ]
  
-  constructor() { 
+  constructor(private router: Router) { 
     
  
   }
@@ -58,7 +61,8 @@ export class ContacterComponent implements OnInit {
        Gouvernerat=((document.getElementById("Gouvernerat") as HTMLInputElement).value);
        code =((document.getElementById("Code") as HTMLInputElement).value);
     
-    
+       this.router.navigate(['/showinfo']);
+      
    
    
   }
