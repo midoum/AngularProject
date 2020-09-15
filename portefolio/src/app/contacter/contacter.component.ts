@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
-import {gouver}from './gouver';
 
+import {gouver}from './gouver';
+export var Email;
+export var Addresse;
+export var code;
+export var Gouvernerat;
 @Component({
   selector: 'app-contacter',
   templateUrl: './contacter.component.html',
   styleUrls: ['./contacter.component.css']
 })
 export class ContacterComponent implements OnInit {
- 
+
  gouvers:gouver[]=[
    {name:'Monastir'},
    {name:'Sousse'},
@@ -40,12 +44,23 @@ export class ContacterComponent implements OnInit {
   {name:'Zaghouan'},	
 		
  ]
-   
+ 
   constructor() { 
     
+ 
   }
 
   ngOnInit(): void {
+  }
+  myFunk(){
+       Email = ((document.getElementById("Email") as HTMLInputElement).value);
+      Addresse=((document.getElementById("Addresse") as HTMLInputElement).value);
+       Gouvernerat=((document.getElementById("Gouvernerat") as HTMLInputElement).value);
+       code =((document.getElementById("Code") as HTMLInputElement).value);
+    
+    
+   
+   
   }
 
 }

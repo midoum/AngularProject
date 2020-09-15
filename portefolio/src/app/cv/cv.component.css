@@ -16,8 +16,9 @@ p{
     text-align: center;
     font-size: 150%;
 }
-button{
-    margin:auto;
-    display: block;
+#button{
+   margin-left: 45%;
+  
+   
 }
 

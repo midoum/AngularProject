@@ -9,6 +9,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CvComponent } from './cv/cv.component';
 import { MotivationComponent } from './motivation/motivation.component';
 import { FooterComponent } from './footer/footer.component';
+import { ShowinfoComponent } from './showinfo/showinfo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     ContacterComponent,
     CvComponent,
     MotivationComponent,
-    FooterComponent
+    FooterComponent,
+    ShowinfoComponent
   ],
   imports: [
     BrowserModule,
