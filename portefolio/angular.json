@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            
             "outputPath": "dist/portefolio",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -23,7 +22,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
-              
             ],
             "styles": [
               "src/styles.css",
@@ -133,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "portefolio"
+  "defaultProject": "portefolio",
+  "cli": {
+    "analytics": false
+  }
 }
