@@ -1,7 +1,7 @@
 .footer{
     justify-content: space-around;
     height: relative;
-    background-color: rgb(185, 180, 183);
+    background-color: rgba(14, 12, 13, 0.808);
     border-top: gray solid 1px;
     color: white;
     font-style: bold;
