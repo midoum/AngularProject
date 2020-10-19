@@ -7,4 +7,29 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portefolio';
+constructor(){
+  var prevScrollpos = window.pageYOffset;
+  
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (currentScrollPos<250) {
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+    document.getElementById("brand").style.color = "black";
+    document.getElementById("item1").style.color = "black";
+    document.getElementById("item2").style.color = "black"; 
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "black";
+    document.getElementById("brand").style.color = "white";
+    document.getElementById("item1").style.color = "white";
+    document.getElementById("item2").style.color = "white";
+    document.getElementById("item1").style.color = "white";
+   
+    
+   
+  }
+  prevScrollpos = currentScrollPos;
+} 
+}
+  
+  
 }
