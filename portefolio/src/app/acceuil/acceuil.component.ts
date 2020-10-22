@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+
+
 import {carte}from './carte';
 
 @Component({
@@ -15,20 +18,33 @@ cartes:carte[]=[
   
 
 ];
+writer(){
+  var i=0;
+  var j=0;
+  var txt = 'PorteFolio de:';
+  var txt1='Ahmed Meskine.'
+   function write (){
+    if(i<txt.length){
+      document.getElementById("title1").innerHTML += txt.charAt(i);
+     
+      i++;
+      setTimeout(write, 100);
+    }else if(j<txt1.length){
+      
+      document.getElementById("title2").innerHTML += txt1.charAt(j);
+      j++;
+      setTimeout(write, 100);
+    }
+   
+  } return write()
+  }
   constructor() { 
-    
-  }
-  showCv: boolean = true;
-  showMotiv:boolean=false;
-  toggleCV(){
-    this.showCv = !this.showCv;
-    this.showMotiv = false;
+   
 }
-toggleMotiv(){
-  this.showMotiv = !this.showMotiv;
-  this.showCv = false;
-}
-  ngOnInit(): void {
-  }
 
+
+  ngOnInit(): void {
+    this.writer();
+  
+}
 }

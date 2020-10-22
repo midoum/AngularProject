@@ -4,11 +4,13 @@ import { Router } from '@angular/router';
 
 
 
+
 import {gouver}from './gouver';
-export var Email;
-export var Addresse;
-export var code;
-export var Gouvernerat;
+var Email;
+var Gouvernerat;
+var code;
+var text;
+var Addresse;
 @Component({
   selector: 'app-contacter',
   templateUrl: './contacter.component.html',
@@ -56,12 +58,14 @@ export class ContacterComponent implements OnInit {
   ngOnInit(): void {
   }
   myFunk(){
-       Email = ((document.getElementById("Email") as HTMLInputElement).value);
-      Addresse=((document.getElementById("Addresse") as HTMLInputElement).value);
-       Gouvernerat=((document.getElementById("Gouvernerat") as HTMLInputElement).value);
-       code =((document.getElementById("Code") as HTMLInputElement).value);
-    
-       this.router.navigate(['/showinfo']);
+        Email = ((document.getElementById("Email") as HTMLInputElement).value);
+       Addresse=((document.getElementById("Addresse") as HTMLInputElement).value);
+        Gouvernerat=((document.getElementById("Gouvernerat") as HTMLInputElement).value);
+        code =((document.getElementById("Code") as HTMLInputElement).value);
+       text =((document.getElementById("text") as HTMLInputElement).value);
+      var body=Email+"\n"+Addresse+" \n"+Gouvernerat+"\n "+code+" \n"+text;
+       window.open('mailto:ahmedmeskine1998@gmail.com?subject=Contact portefolio &body='+body);
+
       
    
    

@@ -1,10 +1,40 @@
-
-
-form{
+html{
+  width: 100%;
+  height: 100%;
  
+}
+body{
+    background-image: url("../../assets/background.jpg");
+    background-size: cover ;
+    background-repeat:  repeat;
+     height: 100%;
+     background-color: rgb(180, 177, 177);
+     width: 100%;  
+     
+    
+ }
 
+.backgroundimage{
+    position: absolute;
+  
+    width: 100%;
+    height:100% ;
+ 
+}
+
+section{
+ height: 100%;
+ 
+ padding-top: 20%;
+ padding-bottom: 10%;
     position: relative;
-    margin-top: 20%;
-    margin-left: 10%;
- justify-content: center;
+ 
+    
+    
+}
+
+.footer{
+    position: relative;
+   
+
 }
