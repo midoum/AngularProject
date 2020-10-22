@@ -27,16 +27,15 @@
 <nav class="Page navigation example" aria-label="Page navigation example">
   <ul class="pagination">
     
-    <Button class="page-link" href="#" (click)="toggleCV()">CV</Button>
-    
-    <Button class="page-link" href="#" (click)="toggleMotiv()">Motivation</Button>
+
    
     
     
   </ul>
 </nav>
-<app-cv [Cv]="showCv"></app-cv>
-<app-motivation [Motivation]="showMotiv"></app-motivation><br>
+<div ><app-cv></app-cv></div>
+<div ><app-motivation></app-motivation></div>
+
 <app-footer></app-footer>
 
 </body>
