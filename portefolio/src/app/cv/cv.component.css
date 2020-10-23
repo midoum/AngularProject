@@ -5,12 +5,21 @@
     height: 600px;
     width: 100%;
     background-color:white;
-    box-shadow: 0 0 3px 0px  gray;
+    box-shadow: 0 0 10px 0px  gray;
     
 }
+.cv-image{
+    margin-top: 5%;
+    margin-left: 40%;
+    height: 226px;
+    width: 223px;
+    background-image: url("../../assets/cv.jpg");
+    box-shadow: 0 0 10px 0px  gray;
+}
 .title h1{
+    box-shadow: 0 2px 0 0   gray;
    text-align: center;
-    color:rgba(170, 53, 53, 0.767);
+    color:rgba(23, 37, 238, 0.767);
 }
 p{
     text-align: center;

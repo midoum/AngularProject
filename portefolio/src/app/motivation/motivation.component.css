@@ -6,19 +6,24 @@
     margin-bottom: 50px;
     height: 600px;
     width: 100%;
-    background-color:white;
-    box-shadow: 0 0 3px 0px  gray;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0 0 10px 0px  gray;
 }
+
 .title h1{
     
+    box-shadow: 0 2px 0 0   gray;
     text-align: center ;
-    color:rgba(170, 53, 53, 0.767);
+    color:rgba(23, 97, 235, 0.767);
 }
 .motivimg{
+    position: relative;
+    background-image: url("../../assets/motiv.png");
+   margin-left: 30%;
+    height: 200px;
+   width: 300px;
    
-    margin: auto;
-    display: block;
-    
+    box-shadow: 0 0 10px 0px  gray;
     
 }
 p{
